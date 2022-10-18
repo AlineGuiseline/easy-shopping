@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400; /*Neste design, todas as fontes são 400, então pode deixar aqui em cima direto*/
+    color: #5D5D7D; /*O mesmo se aplica à cor*/
+}
+
+.wrapper {
+    height: 100vh; /*refere-se à altura da tela inteira*/
+    width: 100vw; /*refere-se à largura da tela inteira*/
+}
+
+.container-left {
+    display: inline-block;
+    width: 60%;
+    padding-left: 136px;
+    margin-top: 18%;
+}
+
+.container-right {
+    display: inline-block;
+    background-color: rgba(93, 93, 125, 0.16); /*se deixar em hexadecimal, a opacidade vai ser aplicada a todos os elementos da section. Colocando em rgba e definindo o valor da opacidade dentro do próprio código, o problema é resolvido*/
+    height: 100vh;
+    width: 40%; /*Em complemento ao width de 60% do container-left*/
+    position: absolute;
+}
+
+img {
+    position: relative;
+    top: 25%;
+    right: 130px;
+}
+
+h1 {
+
+    font-size: 70px;
+    line-height: 80px;
+    width: 368px;
+}
+
+p {
+    font-size: 28px;
+    line-height: 48px;
+    opacity: 0.6;
+    margin: 15px 0;
+    width: 540px;
+}
+
+button {
+    width: 269px;
+    height: 62px;
+    background: #9499EA;
+    box-shadow: 0px 10px 24px rgba(148, 153, 234, 0.0979959);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+header {
+    margin: 24px 0 0 57px;
+}
+
+a {
+    font-size: 28px;
+    line-height: 41px;
+    margin-right: 41px;
+    cursor: pointer;
+}
+
+a:nth-child(2) {
+    opacity: 0.4;
+}
+
+a:hover {
+    opacity: 0.4;
+}
+
+a:active {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 900px) {
+    .container-left {
+        width: 100%;
+        height: 50%;
+        padding: 0;
+        margin: 0;
+  }
+
+    .container-right {
+        display: block;
+        height: auto; /*vai se adaptar de acordo com o tamanho que tem disponível*/
+        width: 100%;
+        position: static;
+        padding: 40px;
+    }
+
+    img {
+        position: static;
+        max-width: 90%; /*o máximo que a imagem vai crescer é 90%*/
+    }
+
+    header {
+        display: none; /*o menu vai desaparecer*/
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 52px;
+        text-align: center;
+        width: auto;
+        margin: 58px 50px 0 50px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        margin: 15px 40px;
+        width: auto;
+    }
+
+    button {
+        margin: 0 auto; /*segredo para alinhar o botão ao centro, afinal, você não especificou tamanho para as margens laterais*/
+        display: block;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .container-left {
+        width: 100%;
+        height: 60%;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .container-left {
+        width: 100%;
+        height: 75%;
+        padding: 0;
+        margin: 0;
+    }
+}
