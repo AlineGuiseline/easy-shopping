@@ -9,12 +9,13 @@ Projeto construído no módulo de CSS do curso de formação Full Stack do <a hr
 <i>Versão desktop</i> :point_down:
 <br>
 <br>
-<img src="https://raw.githubusercontent.com/AlineGuiseline/Shopping-via-mobile/master/assets/shopping-desktop.png" height="350px" width="550px">
+![Desktop](https://raw.githubusercontent.com/AlineGuiseline/Shopping-via-mobile/master/assets/shopping-desktop.png)
 
 <i>Versão mobile</i> :point_down:
 <br>
 <br>
-<img src="https://raw.githubusercontent.com/AlineGuiseline/Shopping-via-mobile/master/assets/shopping-mobile.png"  height="500px" width="220px">
+![Mobile](https://raw.githubusercontent.com/AlineGuiseline/Shopping-via-mobile/master/assets/shopping-mobile.png)
+
 
 ## 🛠️ Tecnologias
 
